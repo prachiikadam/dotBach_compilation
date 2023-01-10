@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .card-container{
+            height: 380px;
+            width: 380px;
+            border: 1px solid gray;
+            box-shadow: 10px 5px 5px rgba(219, 206, 206, 0.936);
+        }
+        .card-container:hover{
+            cursor: pointer;
+        }
+        .card-image{
+            box-sizing: border-box;
+            padding: 20px;
+            height: 65%;
+            width: 100%;
+            border-radius: 30px;
+        }
+        .card-header{
+            margin: 0px;
+            box-sizing: border-box;
+            padding: 0 10px;
+        }
+       .card-price-details{
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+            align-items: center ;
+            padding: 0 10px;
+            font-family:sans-serif;
+       }
+       h2{
+        margin: 0px;
+       }
+        #percentage-off{
+            background-color: rgb(20, 194, 139);
+            width: 60px;
+            height: 20px;
+            border-radius: 5px;
+            padding: 5px;
+            color: white;
+       }
+       .card-price-discounted{
+            color: rgb(140, 93, 244);
+       }
+       .card-price-orignal{
+            color: darkgrey;
+       }
+       hr{
+            margin-left: 10px;
+            margin-right: 20px;
+            box-shadow:10px 5px 5px rgba(219, 206, 206, 0.5); 
+            color: rgba(171, 155, 155, 0.941);
+       }
+       .card-link{
+        text-decoration: none;
+       }
+    </style>
+</head>
+
+<body>
+    <div class="card-container">
+        <a class="card-link" href="https://www.google.com">
+        <img src="./webDevCard.jpeg" alt="web development course" class="card-image"/>
+        <div class="card-header"><h2>Web Development Master Course @dotBatch</h2></div>
+        <hr>
+        <div class="card-price-details">
+           <h3 class="card-price-discounted">&#x20B9;4500</h3>
+           
+           <h3 class="card-price-orignal"><s>&#x20B9;6999</s></h3>
+           <div id="percentage-off">
+            42% off
+           </div>
+        </div>
+        </a>
+        
+    </div>
+</body>
+</html>
